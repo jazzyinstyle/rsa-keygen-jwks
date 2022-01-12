@@ -67,7 +67,7 @@ const accessToken = jwt.sign(payload, privateKey, {
 });
 
 /*
-Step 3: Authentication the JWT Token
+Step 3: Authenticating the JWT Token
 
 You should have everything you need to perform the JWT authentication.
 Please refer to the example in the library jwks-rsa (https://www.npmjs.com/package/jwks-rsa)
