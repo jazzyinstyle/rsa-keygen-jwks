@@ -71,7 +71,7 @@ Step 3: Authentication the JWT Token
 
 You should have everything you need to perform the JWT authentication.
 Please refer to the example in the library jwks-rsa (https://www.npmjs.com/package/jwks-rsa)
-that describe how to reference the jwks.json for authentication (via the jwksUri variable).
+that describe how to reference the jwks.json for authentication (via the jwksUri property).
 */
 
 ```
