@@ -7,6 +7,8 @@ In a common use-case:
 - the private PEM key would be used to sign the JWT token.
 - the JWKS would be used to authenticate incoming request containing the access (or [refresh](https://auth0.com/blog/refresh-tokens-what-are-they-and-when-to-use-them/)) JWT token.
 
+[![NPM][nodei-image]][nodei-url]
+
 ## Example of Use
 
 ```JS
@@ -83,3 +85,6 @@ that describe how to reference the jwks.json for authentication (via the jwksUri
 - [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
 - [jwks-rsa](https://www.npmjs.com/package/jwks-rsa)
 - [jose](https://www.npmjs.com/package/jose)
+
+[nodei-image]: https://nodei.co/npm/rsa-keygen-jwks.png?downloads=true&downloadRank=true&stars=true
+[nodei-url]: https://www.npmjs.com/package/rsa-keygen-jwks
