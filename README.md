@@ -1,6 +1,6 @@
 # rsa-keygen-jwks
 
-This library helps you to generate a new set of RSA public and private keys (in [PEM](https://knowledge.digicert.com/quovadis/ssl-certificates/ssl-general-topics/what-is-pem-format.html)) format together with the JWKS [(Json Web Key Set)](https://auth0.com/docs/secure/tokens/json-web-tokens/json-web-key-sets#:~:text=The%20JSON%20Web%20Key%20Set,using%20the%20RS256%20signing%20algorithm.) that are used for [JWT](https://jwt.io/) authentication implementation.
+This library helps you to generate a new set of RSA public and private keys (in [PEM](https://knowledge.digicert.com/quovadis/ssl-certificates/ssl-general-topics/what-is-pem-format.html)) format together with the JWKS [(JSON Web Key Set)](https://auth0.com/docs/secure/tokens/json-web-tokens/json-web-key-sets#:~:text=The%20JSON%20Web%20Key%20Set,using%20the%20RS256%20signing%20algorithm.) that are used for [JWT](https://jwt.io/) authentication implementation.
 
 In a common use-case:
 
@@ -27,9 +27,13 @@ of _<uuid>_ folder name with the following content:
     - public.key
   - jwks.json
 
-Folder[0] and Folder[1] both represents 2 new set of PEM keys.
+Folder[0] and Folder[1] both represents 2 new sets of PEM keys.
 This is recommended to allow rotation of signing keys
 in case the other has been compromised.
+
+The jwks.json contains the JWKS content which 
+comprises of each JWK (JSON Web Key) 
+corresponding to the (public keys of the) 2 new PEM key sets above.
 */
 
 generator.generateNewKeySet();

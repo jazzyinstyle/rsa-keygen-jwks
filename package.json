@@ -1,6 +1,6 @@
 {
   "name": "rsa-keygen-jwks",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "RSA Key generator (in PEM) with Json Web Keystore (JWKS) file",
   "main": "index.js",
   "scripts": {
